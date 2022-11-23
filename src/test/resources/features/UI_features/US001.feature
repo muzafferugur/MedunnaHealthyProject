@@ -1,4 +1,3 @@
-
 @US001_UI @SmokeTests
 Feature: US001 registerPage
   Background: Ortak Stepler
