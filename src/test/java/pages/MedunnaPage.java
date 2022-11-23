@@ -40,8 +40,12 @@ public class MedunnaPage {
     @FindBy(xpath = "//*[text()='Sign in']") public WebElement signIn;
     @FindBy(xpath = "//*[text()='Administration']") public WebElement girisText;
     @FindBy(xpath = "//*[@id='rememberMe']") public WebElement rememberMe;
-
-
+    @FindBy(xpath = "//*[text()='Did you forget your password?']") public WebElement didYouForget;
+    @FindBy(xpath = "//*[text()='Enter the email address you used to register']") public WebElement resetPassword;
+    @FindBy(xpath = "//*[text()='Register a new account']") public WebElement accountGo;
+    @FindBy(xpath = "//*[text()='Cancel']") public WebElement cancel;
+    @FindBy(xpath = "//*[@id='app-view-container']") public WebElement anaSayfa;
+    @FindBy(xpath = "Sign out") public WebElement signOut;
 
 
     }
