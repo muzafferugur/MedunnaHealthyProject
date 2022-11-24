@@ -4,15 +4,14 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-
 import org.openqa.selenium.interactions.Actions;
 import pages.MedunnaPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US002StepDefs {
-   MedunnaPage page=new MedunnaPage();
+public class US002_StepDef {
+    MedunnaPage page=new MedunnaPage();
     Actions actions= new Actions(Driver.getDriver());
     @Given("Username bolumune gecerli bir {string} girilir")
     public void usernameBolumuneGecerliBirGirilir(String Username) {
@@ -72,3 +71,5 @@ public class US002StepDefs {
 
 
 }
+
+
