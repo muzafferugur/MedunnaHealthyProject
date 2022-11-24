@@ -4,13 +4,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-    public MedunnaPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
-
+public class MedunnaPage{
+    public MedunnaPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+        }
 //US-001 (11-110)
-    public MedunnaPage() {PageFactory.initElements(Driver.getDriver(), this);  }
-    @FindBy(id = "account-menu")   public WebElement accountMenu;
+   @FindBy(id = "account-menu")   public WebElement accountMenu;
     @FindBy(xpath = "//*[text()='Register']")   public WebElement register;
     @FindBy(xpath = "//input[@name='ssn']")   public WebElement ssnBox;
     @FindBy(xpath = "(//*[@class='invalid-feedback'])[1]")   public WebElement SSNFeedback;
@@ -49,7 +48,8 @@ import utilities.Driver;
     @FindBy(xpath = "//*[@id='app-view-container']") public WebElement anaSayfa;
     @FindBy(xpath = "Sign out") public WebElement signOut;
 
-    }
+
+
 
 
   
@@ -1607,6 +1607,7 @@ import utilities.Driver;
 
 
 
+
 //US-017 (1611-1710)
 
 
@@ -2206,8 +2207,8 @@ import utilities.Driver;
 
 
 
-//US-023 (2211-2310)
 
+//US-023 (2211-2310)
 
 
 
@@ -2708,6 +2709,7 @@ import utilities.Driver;
 
 
 //US-028 (2711-2810)
+
 
 
 
