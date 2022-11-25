@@ -10,7 +10,7 @@ import pages.MedunnaPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US004StepDefs {
+public class US004_StepDef {
     MedunnaPage page = new MedunnaPage();
     Actions actions = new Actions(Driver.getDriver());
 

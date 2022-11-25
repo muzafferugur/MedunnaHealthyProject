@@ -1,4 +1,4 @@
-package pojos.stepDefinitions.UI_StepDefinitions;
+package stepDefinitions.UI_StepDefinitions;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
@@ -9,7 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US001StepDefs {
+public class US001_StepDef {
     MedunnaPage page=new MedunnaPage();
     Actions actions= new Actions(Driver.getDriver());
 
