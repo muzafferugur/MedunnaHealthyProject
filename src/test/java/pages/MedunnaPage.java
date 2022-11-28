@@ -3,9 +3,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-
+import java.util.List;
 public class MedunnaPage{
-    public MedunnaPage(){
+ public MedunnaPage(){
         PageFactory.initElements(Driver.getDriver(),this);
         }
 //US-001 (11-110)
@@ -708,7 +708,39 @@ public class MedunnaPage{
 
 
 
-//US-008 (711-810)
+ //US-008 (711-810)
+@FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
+public WebElement kullaniciGirisBolumu;
+ @FindBy(xpath = "(//a[@class='dropdown-item'])[1]")
+ public WebElement signinGiris;
+ @FindBy(xpath = "//input[@name='password']")
+ public WebElement password;
+ @FindBy(xpath = "//button[@type='submit']")
+ public WebElement signinButton;
+ @FindBy(xpath = "//span[.='Password']")
+ public  WebElement passwordButonu;
+ @FindBy(xpath = "//input[@name='currentPassword']")
+ public  WebElement currentPassword;
+ @FindBy(xpath = "//input[@name='newPassword']")
+ public  WebElement newPassword;
+ @FindBy(xpath = "//input[@name='confirmPassword']")
+ public  WebElement confirmPassword;
+ @FindBy(xpath = "//div[@class='invalid-feedback']")
+ public  WebElement notConfirmationText;
+ @FindBy(xpath = "//span[.='Sign out']")
+ public  WebElement signoutButonu;
+ @FindBy(xpath = "//*[@id='strengthBar']")
+ public  WebElement ikinciBar;
+ @FindBy(xpath = "//*[@id='strengthBar']")
+ public  WebElement besinciBar;
+ @FindBy(xpath = "//li[@style='background-color: rgb(255, 0, 0);']")
+ public  WebElement birinciBar;
+ @FindBy(xpath = "//*[@id='strengthBar']")
+ public  WebElement dorduncuBar;
+ @FindBy(xpath = "//button[@type='submit']")
+ public  WebElement saveButonu;
+ @FindBy(xpath = "//div[@class='Toastify__toast Toastify__toast--success toastify-toast']")
+ public  WebElement passwordChangedText;
 
 
 
@@ -776,39 +808,7 @@ public class MedunnaPage{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//US-009 (811-910)
+ //US-009 (811-910)
 
 
 
@@ -909,6 +909,28 @@ public class MedunnaPage{
 
 
 //US-010 (911-1010)
+@FindBy(xpath = "//*[@id='account-menu']")
+public WebElement ilkButon;
+ @FindBy(xpath = "//*[@class='btn btn-primary']")
+ public WebElement signinButtonKayit;
+ @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+ public WebElement myPages;
+ @FindBy(xpath = "//*[text()='My Appointments']")
+ public WebElement myAppointments;
+ @FindBy(xpath = "//*[@class='table-responsive']")
+ public WebElement hastaListesi;
+ @FindBy(xpath = "//*[@id='fromDate']")
+ public WebElement zamanFrom;
+ @FindBy(xpath = "//*[@id='toDate']")
+ public WebElement zamanTo;
+ @FindBy(xpath = "//*[text()='Start DateTime']")
+ public WebElement startDateTime;
+ @FindBy(xpath = "//*[text()='End DateTime']")
+ public WebElement endDateTime;
+ @FindBy(xpath = "//*[text()='Status']")
+ public WebElement status;
+ @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']")
+ public WebElement editButonu;
 
 
 
@@ -986,21 +1008,66 @@ public class MedunnaPage{
 
 
 
+ //US-011 (1011-1110)
+@FindBy (xpath = "//*[text()='Create or Edit an Appointment']")
+public WebElement createEditAppointmentText;
 
+ @FindBy (xpath = "//*[@name='id']")
+ public WebElement idTextBox;
 
+ @FindBy (xpath = "//*[@name='startDate']")
+ public WebElement startDateTimeTextBox;
 
+ @FindBy (xpath = "//*[@name='endDate']")
+ public WebElement endDateTimeTextBox;
 
+ @FindBy (css = "#appointment-status")
+ public List<WebElement> statusDropDown;
 
+ @FindBy (css = "#appointment-status")
+ public WebElement statusDropDown1;
 
+ @FindBy (xpath = "//*[@name='physician.id']")
+ public WebElement physicianDropDown;
 
+ @FindBy(xpath = "//*[@id='appointment-anamnesis']")
+ public WebElement anamnesisTextBox;
 
+ @FindBy(xpath = "//*[@id='appointment-treatment']")
+ public WebElement treatmentTextBox;
 
+ @FindBy(xpath = "//*[@id='appointment-diagnosis']")
+ public WebElement diagnosisTextBox;
 
+ @FindBy(xpath = "//*[@id='appointment-prescription']")
+ public WebElement prescriptionTextBox;
 
+ @FindBy(xpath = "//*[@id='appointment-description']")
+ public WebElement descriptionTextBox;
+ @FindBy(xpath = "//thead//tr//th")
+ public WebElement id;
+ @FindBy(xpath = "//*[text()='Patient']")
+ public WebElement patient;
+ @FindBy(xpath = "//*[text()='Physician']")
+ public WebElement physician;
+ @FindBy(xpath = "(//*[text()='This field is required.'])[1]")
+ public WebElement anamnesisTextBoxDisplayed;
+ @FindBy(xpath = "(//*[text()='This field is required.'])[2]")
+ public WebElement treatmentTextBoxDisplayed;
+ @FindBy(xpath = "(//*[text()='This field is required.'])[3]")
+ public WebElement diagnosisTextBoxDisplayed;
 
+ @FindBy(xpath = "//*[text()='PENDING']")
+ public WebElement pendingtext;
 
+ @FindBy(xpath = "//*[text()='COMPLETED']")
+ public WebElement completedtext;
 
+ @FindBy(xpath = "//*[text()='CANCELLED']")
+ public WebElement cancelledtext;
 
+ @FindBy(xpath = "//*[text()='UNAPPROVED']")
+ public WebElement unapprovedtext;
 
 
 
@@ -1008,7 +1075,6 @@ public class MedunnaPage{
 
 
 
-//US-011 (1011-1110)
 
 
 
@@ -1042,73 +1108,7 @@ public class MedunnaPage{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//US-012 (1111-1210)
+ //US-012 (1111-1210)
 
 
 
