@@ -1,6 +1,8 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 public class Driver {
 
@@ -28,19 +31,19 @@ public class Driver {
      */
 
     public static WebDriver getDriver() {  // void yapmıyoruz cunku biz driver ile methodlari çalıştıracağız. Bize driver
-                                            // dondurmesi lazim ki, getDriver() methodundan sonra driver methodlarina ulasabilelim
+        // dondurmesi lazim ki, getDriver() methodundan sonra driver methodlarina ulasabilelim
 
         if (driver == null) {               // burda driverin değeri null ise yani driver açık değilse bize driveri açsın,çalıştırsın
             switch (ConfigReader.getProperty("browser")) {
-                case "safari" :
+                case "safari":
                     WebDriverManager.safaridriver().setup();
                     driver = new SafariDriver();
                     break;
-                case "firefox" :
+                case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
-                case "edge" :
+                case "edge":
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
@@ -57,7 +60,7 @@ public class Driver {
         return driver;
     }
 
-    public static void closeDriver () {
+    public static void closeDriver() {
 
         if (driver != null) { //burasi getDriver() ile driver calistiginda driverin değeri null değildir. Yani driver açıktır.
             // o halde test sonunda closeDriver() methodunu kullandığımızd çalışsn
@@ -79,4 +82,20 @@ public class Driver {
     }
 
 
+    public static void wait(int secs) {
+
+        try {
+            Thread.sleep(1000 * secs);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (StaleElementReferenceException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

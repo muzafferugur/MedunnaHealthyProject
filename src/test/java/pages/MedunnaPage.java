@@ -409,6 +409,117 @@ public class MedunnaPage{
 
 
 //US-005 (411-510)
+ @FindBy(xpath = "//a[@class='appointment-btn scrollto']")
+ public WebElement makeAppointmentButton;
+
+ @FindBy(xpath = "//input[@id='firstName']")
+ public WebElement firstNameBox3;
+
+ @FindBy(xpath = "//input[@id='lastName']")
+ public WebElement lastNameBox3;
+
+ @FindBy(xpath = "//input[@id='ssn']")
+ public WebElement SSNBox;
+
+ @FindBy(xpath = "//input[@id='email']")
+ public WebElement emailBox3;
+
+ @FindBy(xpath = "//input[@id='phone']")
+ public WebElement phoneBox;
+
+ @FindBy(xpath = "//input[@id='appoDate']")
+ public WebElement appointmentDateBox;
+
+ @FindBy(xpath = "//button[@id='register-submit']")
+ public WebElement sendAnAppointmentRequestButton;
+
+ @FindBy(xpath = "//div[@class='invalid-feedback']")
+ public WebElement hataMesaji;
+
+ // @FindBy(xpath = "//strong[normalize-space()='Appointment registration saved!']")
+ @FindBy(xpath = "//div[@role='alert']")
+ public WebElement registerOnayMesaji;  // "Appointment registration saved! We will call you as soon as possible."
+
+ @FindBy(xpath = "//span[text()='MY PAGES(PATIENT)']")
+ public WebElement myPageButton;
+
+ @FindBy(xpath = "//span[text()='Make an Appointment']")
+ public WebElement makeAppintmentclickbutonu;
+
+ @FindBy(xpath = "//span[text()='Appointment date can not be past date!']")
+ public WebElement hataliTarihUyariYazisiElementi;
+ @FindBy(xpath = "//button[@type='submit']")
+ public WebElement signInButton2;
+
+ @FindBy(xpath = "//input[@id='username']")
+ public WebElement usernameTextBox;
+
+ @FindBy(xpath = "//input[@id='password']")
+ public WebElement passwordTextBox;
+
+ @FindBy(xpath = "//*[text()='Settings']")
+ public WebElement settingsButton;
+
+ @FindBy(xpath = "//span[normalize-space()='hasta yasemin']")
+ public WebElement settingsButton2;
+ @FindBy(xpath = "//*[contains(text(),'User settings for')]")
+ public WebElement userSettingsForText;
+
+ @FindBy(xpath ="//input[@name='firstName']")
+ public WebElement firstnameTextBox;
+
+ @FindBy(xpath ="//input[@name='lastName']")
+ public WebElement lastnameTextBox;
+
+ @FindBy(xpath ="//input[@name='email']")
+ public WebElement emailTextBox;
+
+ @FindBy(xpath = "//span[text()='Sign out']")
+ public WebElement signOutButton;
+ @FindBy(xpath = "//span[normalize-space()='hasta yasemin']")
+ public WebElement signOutButton2;
+ @FindBy (xpath = "//span[text()='Save']")
+ public WebElement saveButton;
+
+ @FindBy(id = "account-menu")
+ public WebElement accountMenu3;
+
+ @FindBy(xpath = "//*[text()='Sign in']")
+ public WebElement signInButton1;
+
+ @FindBy(xpath = "//*[text()='MY PAGES(PATIENT)']")
+ public WebElement myPagesButton;
+
+ @FindBy(xpath = "//span[text()='Make an Appointment']")
+ public WebElement makeanAppointmentButton;
+
+ @FindBy(xpath = "(//*[text()='Make an Appointment'])[2]")
+ public WebElement makeanAppointmenttext;
+
+ @FindBy(id="phone")
+ public WebElement phone;
+
+ @FindBy(xpath = "//input[@value='2022-08-16']")
+ public WebElement appointmentDateTime;
+
+ @FindBy(xpath = "Appointment date can not be past date!")
+ public WebElement sendAppointmentButton;
+
+ @FindBy(xpath = "//span[normalize-space()='Send an Appointment Request']")
+ public WebElement sendAppointmentButton2;
+ @FindBy(xpath = "//*[contains(text(),'Appointment registration saved')]")
+ public WebElement successMessageToastContainer;
+
+ @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
+ public WebElement signIn3;
+
+ @FindBy(xpath = "//span[normalize-space()='Register']")
+ public WebElement register3;
+ @FindBy(xpath = "//button[@id='register-submit']//span[contains(text(),'Register')]")
+ public WebElement register2;
+
+ @FindBy(xpath = "//span[normalize-space()='Send an Appointment Request']")
+ public WebElement sendAppointmentButton3;
 
 
 

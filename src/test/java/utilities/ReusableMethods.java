@@ -221,5 +221,15 @@ public class ReusableMethods {
         }
     }
 
+    public static String stringDateFormat(String date){
+
+        String day = date.substring(0,2);
+        String month = date.substring(3,5);
+        String year = date.substring(6);
+
+        String formatDateString =year+ "-"+month+"-"+day;
+
+        return formatDateString;
+    }
 }
 
