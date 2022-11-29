@@ -231,5 +231,9 @@ public class ReusableMethods {
 
         return formatDateString;
     }
+    public static void scrollIntoView(WebElement element) {
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 }
 
