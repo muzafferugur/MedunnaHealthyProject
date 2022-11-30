@@ -30,13 +30,13 @@ public class US010_StepDef {
         @Then("Dr. MY PAGES sekmesini tiklar")
         public void dr_my_pages_sekmesini_tiklar() {
             ReusableMethods.waitFor(1);
-            page.myPages.click();
+            page.myPages10.click();
 
         }
         @Then("Dr. My Appointments sekmesine tiklar")
         public void dr_my_appointments_sekmesine_tiklar() {
             ReusableMethods.waitFor(1);
-            page.myAppointments.click();
+            page.myAppointments10.click();
         }
         @Then("Dr. Hasta randevu listesini goruntuler")
         public void dr_hasta_randevu_listesini_goruntuler() {
