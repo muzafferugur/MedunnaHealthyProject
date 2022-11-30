@@ -35,7 +35,7 @@ public class US018_StepDef {
 
     @Then("AdminHus Sign in secenegine tiklar")
     public void adminhusSignInSecenegineTiklar() {
-        medPage.signInButton22.click();
+        medPage.signInButton18.click();
     }
 
     @And("AdminHus  {string} ve {string} ile giris yapar")
