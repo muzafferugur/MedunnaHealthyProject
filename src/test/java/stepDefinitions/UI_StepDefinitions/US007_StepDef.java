@@ -43,7 +43,7 @@ public class US007_StepDef {
     }
     @Then("Kullanici {string} bilgilerin doldurur")
     public void kullanici_bilgilerin_doldurur(String phone) {
-        us07.phone.sendKeys(phone);
+        us07.phone07.sendKeys(phone);
 
     }
     @Then("Kullanici guncel bir tarih secer")
