@@ -33,7 +33,7 @@ public class US024_StepDef {
     @And("Kullanici my appointments sayfasinda show test butonuna tiklar")
     public void kullaniciMyAppointmentsSayfasindaShowTestButonunaTiklar() {
         ReusableMethods.waitForVisibility(page.showTests,5);
-        page.showTests.click();
+        page.showTests24.click();
     }
     @And("Kullanici test sayfasinda wiev result butonuna tiklar")
     public void kullaniciTestSayfasindaWievResultButonunaTiklar() {
