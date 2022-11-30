@@ -1109,15 +1109,113 @@ public WebElement createEditAppointmentText;
 
 
  //US-012 (1111-1210)
+ @FindBy(id="account-menu")
+ public WebElement  ilkKutusu;
+ @FindBy(xpath = "//*[@id=\"login-item\"]/span")
+ public WebElement signButonu;
+ @FindBy(xpath = "//*[@name=\"username\"]")
+ public WebElement usernamey;
+ @FindBy(xpath = "//*[@name=\"password\"]")
+ public WebElement passwordy;
+ @FindBy(xpath = "(//*[text()=\"Sign in\"])[3]")
+ public WebElement signikinciButonu;
+ @FindBy(xpath = "//*[text()=\"1903 yasemin\"]")
+ public WebElement hesapAdresi;
+ @FindBy(xpath = "//*[@id=\"entity-menu\"]/a")
+ public WebElement mypages;
+ @FindBy(xpath = "//*[text()='My Appointments']")
+ public WebElement myappointments;
+ @FindBy(xpath = "(//*[@class=\"btn btn-primary btn-sm\"])[1]")
+ public WebElement editsekmesi;
+ @FindBy(xpath = "//a[@class='btn btn-success btn-sm']")
+ public WebElement requesttext;
+ @FindBy(xpath = "//h2[@id='c-test-item-heading']")
+ public WebElement testitemyazisi;
+ @FindBy(css = "[id='1402']")
+ public WebElement testsUrea;
+
+ @FindBy(css = "[id='1403']")
+ public WebElement testsCreatine;
+
+ @FindBy(css = "[id='1404']")
+ public WebElement testsSodium;
 
+ @FindBy(css = "[id='1405']")
+ public WebElement testsPotassium;
 
+ @FindBy(css = "[id='1406']")
+ public WebElement testsTotalProtein;
 
+ @FindBy(css = "[id='1408']")
+ public WebElement testsHemoglobin;
 
+ @FindBy(css = "[id='1407']")
+ public WebElement testsAlbumin;
 
+ @FindBy(css = "[id='1401']")
+ public WebElement testsGlucose;
+ @FindBy(xpath = "//div[@role='alert']")
+ public WebElement alertButton;
+ @FindBy(xpath = "//span[text()='Save']")
+ public WebElement testsSaveButton;
+ @FindBy(xpath = "//*[@class=\"btn btn-danger btn-sm\"]")
+ public WebElement showtest;
+ @FindBy(xpath = "//*[text()=\"View Results\"]")
+ public WebElement viewresult;
 
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[1]/span")
+ public WebElement idim;
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[2]/span")
+ public WebElement nametest;
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[3]/span")
+ public WebElement Result;
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[4]/span")
+ public WebElement DefaultMinValue;
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[5]/span")
+ public WebElement DefaultMaxValue;
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[6]/span")
+ public WebElement Test ;
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[7]/span")
+ public WebElement Description;
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[8]/span")
+ public WebElement Date;
+ @FindBy(xpath = "//*text()=\"Request Inpatient\"]")
+ public  WebElement Requestonpaint;
+ @FindBy(xpath ="//*[@id=\"fromDate\"]" )
+ public WebElement bastarih;
+ @FindBy(xpath = "//*[@id=\"toDate\"]")
+ public WebElement sontarih;
+ @FindBy(xpath ="//*[text()=\"My Inpatients\"]")
+ public WebElement myinpatients;
 
+ @FindBy(xpath ="//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[1]/span")
+ public WebElement yatisID;
 
+ //US-013 (1211-1310)
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[2]/span")
+ public WebElement yatisStart;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[3]/span")
+ public WebElement yatisEnd;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[4]/span")
+ public WebElement yatisStatus;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[5]/span")
+ public WebElement yatisDesccription;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[6]/span")
+ public WebElement yatisCreated;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[7]/span")
+ public WebElement yatisRoom;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[8]/span")
+ public WebElement yatisAppointment;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/thead/tr/th[9]/span")
+ public WebElement yatispatient;
 
+ //US-014 (1311-1410)
+ @FindBy(xpath = "//*[@id=\"account-menu\"]/a/span")
+ public WebElement hesap;
+ @FindBy(xpath = "//*[text()=\"Sign out\"]")
+ public WebElement signout;
+ @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/tbody/tr[1]/td[8]/a")
+ public WebElement hastaid;
 
 
 
@@ -1208,7 +1306,6 @@ public WebElement createEditAppointmentText;
 
 
 
-//US-013 (1211-1310)
 
 
 
@@ -1308,107 +1405,10 @@ public WebElement createEditAppointmentText;
 
 
 
-//US-014 (1311-1410)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//US-015 (1411-1510)
+ //US-015 (1411-1510)
 @FindBy(xpath = "//a[@class='dropdown-item active']")
 public WebElement us015_PatientButonu;
 
