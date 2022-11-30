@@ -2273,6 +2273,41 @@ public WebElement createEditAppointmentText;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  //US-024 (2311-2410)
  // son eklenenler 24. US için
  @FindBy(xpath = "//*[text()='MY PAGES(PATIENT)']") public WebElement myPages;
