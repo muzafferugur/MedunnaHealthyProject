@@ -1409,23 +1409,23 @@ public WebElement createEditAppointmentText;
 
 
 //US-015 (1411-1510)
+@FindBy(xpath = "//a[@class='dropdown-item active']")
+public WebElement us015_PatientButonu;
 
+ @FindBy(id = "jh-create-entity")
+ public WebElement us015_CreateANewPatientButonu;
 
+ @FindBy(xpath = "//input[@id='patient-firstName']")
+ public WebElement us015_FirstNameKutusu;
 
+ @FindBy (xpath = "//input[@id='email']")
+ public WebElement us015_EmailKutusu;
 
+ @FindBy(id = "save-entity")
+ public WebElement us015_SaveButonu;
 
-
-
-
-
-
-
-
-
-
-
-
-
+ @FindBy(xpath = "(//a[@class='page-link'])[9]")
+ public WebElement us015_SayfaninSonundakiOk;
 
 
 
@@ -1509,53 +1509,53 @@ public WebElement createEditAppointmentText;
 
 
 //US-016 (1511-1610)
+@FindBy(xpath = "//span[.='Room']")
+public WebElement us016_RoomButonu;
 
+ @FindBy(id="jh-create-entity")
+ public WebElement us016_CreateANewRoom;
 
+ @FindBy(xpath = "//span[.='Room Number']")
+ public WebElement us016_RoomNumberYazisi;
 
+ @FindBy(xpath = "//select[@id='room-roomType']")
+ public WebElement us016_RoomTypeButonu;
 
+ @FindBy(xpath = "//span[.='Status']")
+ public WebElement us016_StatusYazisi;
 
+ @FindBy(xpath = "//span[.='Price']")
+ public WebElement us016_PriceYazisi;
 
+ @FindBy(id = "save-entity")
+ public WebElement us016_SaveButonu;
 
+ @FindBy(xpath = "(//div[@class='invalid-feedback'])[2]")
+ public WebElement us016_UyariMesaji;
 
+ @FindBy(xpath = "//input[@name='roomNumber']")
+ public WebElement us016_RoomNumberBox;
 
+ @FindBy (xpath = "//input[@id='room-price']")
+ public WebElement us016_PriceBox;
 
+ @FindBy(xpath = "//span[.='Description']")
+ public WebElement us016_DescriptionYazisi;
 
+ @FindBy(xpath = "(//span[.='View'])[1]")
+ public WebElement us016_ViewButonu;
 
+ @FindBy(xpath = "//span[.='Room Type")
+ public WebElement us016_IlkSayfadakiRoomTypeYazisi;
 
+ @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
+ public WebElement us016_EditButonu;
 
+ @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[1]")
+ public WebElement us016_BirinciDeleteButonu;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ @FindBy(id = "jhi-confirm-delete-room")
+ public WebElement us016_IkinciDeleteButonu;
 
 
 
@@ -1609,41 +1609,41 @@ public WebElement createEditAppointmentText;
 
 
 //US-017 (1611-1710)
+@FindBy(xpath = "(//*[.='Items&Titles'])[1]")
+public WebElement us017_ItemsTitlesButonu;
 
+ @FindBy(xpath = "(//*[.='Test Item'])[1]")
+ public WebElement us017_TestItemButonu;
 
+ @FindBy(xpath = "//*[.='Create a new Test Item']")
+ public WebElement us017_CreateANewTestItemButonu;
 
+ @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[1]")
+ public WebElement us017_ViewButonu;
 
+ @FindBy (xpath = "(//*[.='Name'])[2]")
+ public WebElement us017_Name;
 
+ @FindBy(xpath = "(//*[.='Description'])[2]")
+ public WebElement us017_Description;
 
+ @FindBy(xpath = "(//*[.='Price'])[2]")
+ public WebElement us017_Price;
 
+ @FindBy(xpath = "(//*[.='Default Min. Value'])[2]")
+ public WebElement us017_DefaultMinValue;
 
+ @FindBy(xpath = "(//*[.='Default Max. Value'])[2]")
+ public WebElement us017_DefaultMaxValue;
 
+ @FindBy(xpath = "(//*[.='Created Date'])[2]")
+ public WebElement us017_CreatedDate;
 
+ @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[1]")
+ public WebElement us017_IlkDeleteButonu;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ @FindBy(id="jhi-confirm-delete-cTestItem")
+ public WebElement us017_IkınciDeleteButonu;
 
 
 
