@@ -86,12 +86,8 @@ public class US022_StepDef {
 
     }
 
-    @Then("Sayfayi kapatir")
-    public void sayfayi_kapatir() {
-        Driver.quitDriver();
 
 
-    }
     @And("show appoinments box'i tiklar")
     public void showAppoinmentsBoxITiklar() {
         us22.showAppointmentsButton.click();

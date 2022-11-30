@@ -1710,7 +1710,7 @@ public WebElement us017_ItemsTitlesButonu;
 
 //US-018 (1711-1810)
 @FindBy(id = "account-menu") public WebElement accountIcon;
- @FindBy(id = "login-item") public WebElement signInButton;
+ @FindBy(id = "login-item") public WebElement signInButton18;
  @FindBy (xpath = "//input[@name='password']")  public WebElement passwordBox;
  @FindBy (xpath = "//button[@type='submit']")  public WebElement signInButton22;
  @FindBy(xpath = "//div//li[7]")  public WebElement itemTitlesDropdown;
