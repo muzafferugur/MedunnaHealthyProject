@@ -7,7 +7,7 @@ Feature: US026 Contact bolumunden mesaj gonderme
 
 
   @US026_TC01
-  Scenario : US026_TC01 Herhangi bir kullanici mesaj gonderir
+  Scenario: US026_TC01 Herhangi bir kullanici mesaj gonderir
     Given Contact butonuna tiklanir
     Then Sayfanin sonuna inilir
     And Mesaj gonderilebilecek alanin oldugu dogrulanir
