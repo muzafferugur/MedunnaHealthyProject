@@ -15,10 +15,7 @@ public class US026_StepDef {
     MedunnaPage page=new MedunnaPage();
     Actions actions= new Actions(Driver.getDriver());
 
-    @Given("Medunna anasayfasina gidilir")
-    public void medunnaAnasayfasinaGidilir() {
-        Driver.getDriver().get(ConfigReader.getProperty("medunnaURL"));
-    }
+
 
 
     @Given("Contact butonuna tiklanir")

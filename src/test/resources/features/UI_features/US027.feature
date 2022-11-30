@@ -3,7 +3,7 @@
 Feature: US027 Admin mesajlari gorebilir ve duzenleyebilir
 
   Background: Ortak Stepler
-    Given  Medunna anasayfasina gidilir
+    Given Medunna anasayfasina gidilir
     Then   fgAccount menu butonu tiklanir
     And    fgSign in butonuna tiklar
     And    fgKullanici acilan sayfada Username bolumune gecerli bir kullanıcı adı girer
@@ -14,7 +14,7 @@ Feature: US027 Admin mesajlari gorebilir ve duzenleyebilir
 
 
   @US027_TC01
-  Scenario : US027_TC01 Admin, mesaj portalına gidebilir ve tüm mesajları, yazarlarını ve e-postalarını görüntüleyebilir.
+  Scenario: US027_TC01 Admin, mesaj portalına gidebilir ve tüm mesajları, yazarlarını ve e-postalarını görüntüleyebilir.
     Given fgAcilan menuden message bolumune tiklar
     And fgYazilan mesajlarin gorundugunu dogrular
     And fgMesajlari gonderenkerin isimlerinin gorundugunu dogrular
