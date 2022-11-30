@@ -507,7 +507,8 @@ public class MedunnaPage{
 
 
 
-//US-006 (511-610)
+
+ //US-006 (511-610)
 
 
 
@@ -1807,42 +1808,6 @@ public WebElement createEditAppointmentText;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //US-019 (1811-1910)
 @FindBy(xpath = "//*[@id='entity-menu']/div/a[2]") public WebElement staffButton;
  @FindBy(xpath = "//span[normalize-space()='Create a new Staff']") public WebElement createStaff;
@@ -1907,8 +1872,44 @@ public WebElement createEditAppointmentText;
 
 
 
-//US-020 (1911-2010)
-@FindBy(xpath="//*[@id='admin-menu']")  public WebElement administrationButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //US-020 (1911-2010)
+ @FindBy(xpath="//*[@id='admin-menu']")  public WebElement administrationButton;
  @FindBy(xpath="//span[text()='User management']") public WebElement userManagementButton;
  @FindBy(xpath="(//span[text()='View'])[2]") public WebElement userViewButton;
  @FindBy(xpath="//span[text()='First name']") public WebElement userFirstNameElement;
@@ -1924,21 +1925,6 @@ public WebElement createEditAppointmentText;
  @FindBy(xpath="//option[@value='ROLE_STAFF']") public WebElement profilesRoleStaff;
  @FindBy(xpath="//option[@value='ROLE_PHYSICIAN']") public WebElement profilesRolePhysician;
  @FindBy(xpath="(//span[text()='Delete'])[13]") public WebElement userDeleteButton;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2322,20 +2308,7 @@ public WebElement createEditAppointmentText;
 
 
 
-//US-024 (2311-2410)
-
-
-
-
-
-
-
-
-
-
-
-
-
+ //US-024 (2311-2410)
  // son eklenenler 24. US için
  @FindBy(xpath = "//*[text()='MY PAGES(PATIENT)']") public WebElement myPages;
  @FindBy(xpath = "(//*[@class='bx bx-chevron-right'])[6]") public WebElement makeAnAppointment;
@@ -2353,22 +2326,6 @@ public WebElement createEditAppointmentText;
  @FindBy(xpath = "//tbody//tr[1]//td[7]") public WebElement viewTest;
  @FindBy(xpath = "//*[@class='jh-card card']") public WebElement testResult;
  @FindBy(xpath = "//*[text()='onuray']") public WebElement hastaPage;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
