@@ -2,9 +2,11 @@ package utilities;
 
 import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
+import pages.MedunnaPage;
 
 import java.io.File;
 import java.io.IOException;
@@ -234,6 +236,41 @@ public class ReusableMethods {
     public static void scrollIntoView(WebElement element) {
         JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
         jse.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    static MedunnaPage medunna=new MedunnaPage();
+    public static void liste(){
+        Assert.assertTrue(medunna.id.isEnabled() );
+        Assert.assertTrue( medunna.nametest.isEnabled() );
+        Assert.assertTrue(medunna.Result.isEnabled() );
+        Assert.assertTrue( medunna.DefaultMinValue.isEnabled());
+        Assert.assertTrue(medunna.DefaultMaxValue.isEnabled() );
+        Assert.assertTrue(medunna.Description.isEnabled() );
+        Assert.assertTrue(medunna.Test.isEnabled() );
+        Assert.assertTrue( medunna.Date.isEnabled());
+
+    }
+
+    public static void thead(){
+        waitFor(2);
+        Assert.assertTrue(medunna.yatisID.isEnabled());
+        waitFor(2);
+        Assert.assertTrue( medunna.yatisAppointment.isEnabled());
+        waitFor(2);
+        Assert.assertTrue( medunna.yatisStart.isEnabled());
+        waitFor(2);
+        Assert.assertTrue(medunna.yatisStatus.isEnabled());
+        waitFor(2);
+        Assert.assertTrue(medunna.yatispatient.isEnabled());
+        waitFor(2);
+        Assert.assertTrue( medunna.yatisCreated.isEnabled());
+        waitFor(2);
+        Assert.assertTrue( medunna.yatisRoom.isEnabled());
+        waitFor(2);
+        Assert.assertTrue(medunna.yatisEnd.isEnabled());
+        waitFor(2);
+        Assert.assertTrue(medunna.yatisDesccription.isEnabled());
+
     }
 }
 
