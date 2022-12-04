@@ -8,7 +8,7 @@ public class Object_Mapper {
 
         // new ObjectMapper().readValue(jsonInString, HashMap.class);
 
-    private static ObjectMapper mapper;
+    private static final ObjectMapper mapper;
 
     static {
         mapper=new ObjectMapper();
