@@ -14,7 +14,7 @@ public class DatabaseUtility {
     public static void createConnection() {
 //        String url = ConfigurationReader.getProperty("database_url");
 //        String user = ConfigurationReader.getProperty("database_user");
-//        String password = "Techpro_@126";
+//        String password = "medunna_pass_987";
 
 
         String url = "jdbc:postgresql://medunna.com:5432/medunna_db";
@@ -224,4 +224,5 @@ public class DatabaseUtility {
     public static List<Object> getRowListWithParam(String query,int row) {
         return getQueryResultList(query).get(row);
     }
+
 }
