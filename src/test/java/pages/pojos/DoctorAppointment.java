@@ -1,4 +1,4 @@
-package pojos;
+package pages.pojos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

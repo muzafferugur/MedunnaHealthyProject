@@ -157,7 +157,6 @@ public class US018_StepDef {
     @And("AdminHus ilk delete butonuna tiklar")
     public void adminhusIlkDeleteButonunaTiklar() {
 
-
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].click();",medPage.deleteAlert);
 
