@@ -3,23 +3,25 @@ package pojos;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class RoomPost {
+public class RoomPojo {
 
     private String description;
     private int price;
     private int roomNumber;
     private String roomType;
     private boolean status;
+    private int id;
 
-    public RoomPost(String description, int price, int roomNumber, String roomType, boolean status) {
+    public RoomPojo(String description, int price, int roomNumber, String roomType, boolean status, int id) {
         this.description = description;
         this.price = price;
         this.roomNumber = roomNumber;
         this.roomType = roomType;
         this.status = status;
+        this.id = id;
     }
 
-    public RoomPost() {
+    public RoomPojo() {
     }
 
     public String getDescription() {
@@ -62,14 +64,23 @@ public class RoomPost {
         this.status = status;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
-        return "RoomPost{" +
+        return "Room{" +
                 "description='" + description + '\'' +
                 ", price=" + price +
                 ", roomNumber=" + roomNumber +
                 ", roomType='" + roomType + '\'' +
                 ", status=" + status +
+                ", id=" + id +
                 '}';
     }
 }
