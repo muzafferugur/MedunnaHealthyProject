@@ -20,12 +20,14 @@ public class US018_DB_StepDef {
     @Then("AdminHus kayitli doktor bilgilerini getirir {string} ve {string}")
     public void adminhusKayitliDoktorBilgileriniGetirirVe(String query, String columnName) {
         actualData = DatabaseUtility.getColumnData(query, columnName );
-       //System.out.println(actualData);
+        System.out.println(DatabaseUtility.getColumnNames(query));
+        //System.out.println(actualData);
         }
 
     @Then("AdminHus olusturdugu doktor bilgilerini dogrular")
     public void admin_hus_olusturdugu_doktor_bilgilerini_dogrular() {
-    assertTrue(actualData.toString().contains("4863"));
+
+        assertTrue(actualData.toString().contains("0"));
         }
         }
 
