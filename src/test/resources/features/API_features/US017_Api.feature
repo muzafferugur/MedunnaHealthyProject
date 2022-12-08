@@ -14,4 +14,4 @@ Feature: US017_API
     Given   Admin HE goes to Medunna for post request the Test Item
     When    Admin HE sends Post request
     Then    Admin HE Status code is 201 oldugunu dogrular
-    And     Admin HE Verify expected data equals to actual data
+    And     Admin HE Verify expected data equals to actual data"
