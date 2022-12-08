@@ -1,4 +1,4 @@
-package base_url_setup;
+package baseUrl;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 public class MedunnaBaseUrl {
