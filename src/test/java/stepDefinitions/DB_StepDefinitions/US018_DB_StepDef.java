@@ -22,14 +22,13 @@ public class US018_DB_StepDef {
         actualData = DatabaseUtility.getColumnData(query, columnName );
         System.out.println(DatabaseUtility.getColumnNames(query));
         //System.out.println(actualData);
-        }
+    }
 
     @Then("AdminHus olusturdugu doktor bilgilerini dogrular")
     public void admin_hus_olusturdugu_doktor_bilgilerini_dogrular() {
-
-        assertTrue(actualData.toString().contains("0"));
-        }
-        }
+        assertTrue(actualData.toString().contains("362322"));
+    }
+}
 
 
 
