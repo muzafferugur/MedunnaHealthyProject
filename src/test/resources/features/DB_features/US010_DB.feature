@@ -1,13 +1,7 @@
-@DBTest
-Feature: DB ile randevulari dogrulama
+@DBTest @US010
+Feature: Database test
 
-  Scenario Outline:Dr DB ile randevulari dogrular
-
-    Given Dr. DataBase ile baglanti kurar
-    And Dr. tablodan appointment datalarini alir
-    Then Dr. appointment datalarindan  "<query>" ve "<columnName>" olanlari alir
-    And Dr database ile randevu bilgilerinin dogrulamasini yapar
-    And Dr database baglantisini kapatir
-    Examples:
-      |query  |columnName|
-    |select * from public.appointment|id|
+  Scenario: Randevu Db test
+    Given US010 Kullanici connection kurar
+    And US010 Kullanici hasta bilgilerini ceker
+    Then US010 Kullanici hasta bilgilerini dogrular

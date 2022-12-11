@@ -59,7 +59,7 @@ public class US010_StepDef {
 
         @And("Dr.sayfayi kapatir")
         public void drSayfayiKapatir() {
-            Driver.quitDriver();
+         //   Driver.quitDriver();
         }
 
         @And("Dr. patient id, start date, end date, status bilgilerini goruntuler")
