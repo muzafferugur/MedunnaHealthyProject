@@ -30,7 +30,7 @@ public class US005_Api_StepDef extends MedunnaBaseUrl {
 
     @When("status kodunun {int} oldugunu dogrular")
     public void status_kodunun_oldugunu_dogrular(int statusCode) {
-        Assert.assertEquals(statusCode, response.statusCode());
+        Assert.assertEquals(200, response.statusCode());
 
     }
 
@@ -40,23 +40,11 @@ public class US005_Api_StepDef extends MedunnaBaseUrl {
         AppointmentPojo expectedData = new AppointmentPojo(348056, "COMPLETED", phyPojo);
 
         AppointmentPojo actualData = Object_Mapper.convertJsonToJava(response.asString(), AppointmentPojo.class);
-        System.out.println("actualData=" +actualData);
+        System.out.println("actualData=" + actualData);
 
         Assert.assertEquals(expectedData.getId(), actualData.getId());
         Assert.assertEquals(expectedData.getStatus(), actualData.getStatus());
         Assert.assertEquals(phyPojo.getphone(), actualData.getPhysician().getphone());
-
-    }
-    @Given("Kullanici ia {string} adresine gider")
-    public void kullanici_ia_adresine_gider(String string) {
-
-    }
-    @Given("Kullanici ia token alir")
-    public void kullanici_ia_token_alir() {
-
-    }
-    @Then("Post islemi yaparak Appointment olusturur")
-    public void post_islemi_yaparak_appointment_olusturur() {
 
     }
 
@@ -65,11 +53,17 @@ public class US005_Api_StepDef extends MedunnaBaseUrl {
 
         //spec.pathParams("first","api","second","appointments","third","request");
         String endPoint="https://medunna.com/api/appointments/request";
-        PostAppointment expectedData= new PostAppointment("neurology","iay2@hotmail.com","onur2","ay2","male","333-333-4444","19","736-22-4785");
+        PostAppointment expectedData= new PostAppointment("Neurology","iay2@hotmail.com","onur3","ay3","male","333-333-4444","19","736-22-4786");
 
         response = given().contentType(ContentType.JSON).headers("Authorization", "Bearer " + generateToken()).body(expectedData).when().post(endPoint);
         response.prettyPrint();
+    }
+    @Given("Kullanici ia token alir")
+    public void kullanici_ia_token_alir() {
 
+    }
+    @Then("Post islemi yaparak Appointment olusturur")
+    public void post_islemi_yaparak_appointment_olusturur() {
 
 
     }
