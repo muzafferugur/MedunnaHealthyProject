@@ -8,7 +8,7 @@ Feature: DB Testing
     And   AdminHus olusturdugu doktor bilgilerini dogrular
     Examples:
       | query                              | columnName  |
-      | select * from patient    | id                    |
+      | select * from patient    | id                       |
 
 
 
