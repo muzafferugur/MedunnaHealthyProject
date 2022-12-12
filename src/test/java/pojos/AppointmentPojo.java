@@ -20,6 +20,9 @@ public class AppointmentPojo {
         this.physician = physician;
     }
 
+    public AppointmentPojo(String hastack, String s, int i, String s1, String s2, String completed, Object o, Object o1, Object o2, Object o3, Object o4, PhysicianPojo physician, PatientPojo patient, Object o5) {
+    }
+
     public Integer getId() {
         return id;
     }

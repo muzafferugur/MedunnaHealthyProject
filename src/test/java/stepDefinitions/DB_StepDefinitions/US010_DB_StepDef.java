@@ -33,6 +33,7 @@ public class US010_DB_StepDef {
     @Given("US010 Kullanici hasta bilgilerini ceker")
     public void us010_kullanici_hasta_bilgilerini_ceker() {
         randevuBilgi = getRowMap(query);
+
         System.out.println("randevuBilgileri = " + randevuBilgi);
 
     }
