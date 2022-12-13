@@ -38,7 +38,7 @@ public class US011_StepDef {
 
         @Then("Dr.MY PAGES sekmesini tiklar")
         public void dr_my_pages_sekmesini_tiklar() {
-            ReusableMethods.waitFor(1);
+            ReusableMethods.waitFor(2);
             page.myPages.click();
 
         }
@@ -63,42 +63,51 @@ public class US011_StepDef {
 
         @Then("Dr.Create or edit an apppointment menusune ulasir")
         public void dr_create_or_edit_an_apppointment_menusune_ulasir() {
+            ReusableMethods.waitFor(1);
             Assert.assertTrue(page.createEditAppointmentText.isDisplayed());
 
         }
 
         @And("Dr. Hastanin id bilgisini gorunurlugunu dogrular")
         public void drHastaninIdBilgisiniGorunurlugunuDogrular() {
+            ReusableMethods.waitFor(1);
             Assert.assertTrue(page.id.isDisplayed());
         }
 
         @And("Dr. Hastanin Start Date Time bilgisini gorunurlugunu dogrular")
         public void drHastaninStartDateTimeBilgisiniGorunurlugunuDogrular() {
+            ReusableMethods.waitFor(1);
             Assert.assertTrue(page.startDateTime.isDisplayed());
         }
 
         @And("Dr. Hastanin End DateTime bilgisini gorunurlugunu dogrular")
         public void drHastaninEndDateTimeBilgisiniGorunurlugunuDogrular() {
+            ReusableMethods.waitFor(1);
             Assert.assertTrue(page.endDateTime.isDisplayed());
+            actions.sendKeys(Keys.PAGE_DOWN).perform();
         }
 
         @And("Dr. Hastanin Status bilgisini gorunurlugunu dogrular")
         public void drHastaninStatusBilgisiniGorunurlugunuDogrular() {
+            ReusableMethods.waitFor(1);
             Assert.assertTrue(page.status.isDisplayed());
         }
 
         @And("Dr. Hastanin Physician bilgisini gorunurlugunu dogrular")
         public void drHastaninPhysicianBilgisiniGorunurlugunuDogrular() {
+            ReusableMethods.waitFor(1);
             Assert.assertTrue(page.physician.isDisplayed());
         }
 
         @And("Dr. Hastanin Patient bilgisini gorunurlugunu dogrular")
         public void drHastaninPatientBilgisiniGorunurlugunuDogrular() {
+            ReusableMethods.waitFor(1);
             Assert.assertTrue(page.patient.isDisplayed());
         }
 
         @And("Dr. Edit butonuna tiklar")
         public void drEditButonunaTiklar() {
+            ReusableMethods.waitFor(1);
             page.editButonu.click();
         }
 
@@ -106,9 +115,9 @@ public class US011_StepDef {
         public void drAnamnesisBolumuBosBirakilamaz() {
 
             page.anamnesisTextBox.click();
-            ReusableMethods.waitFor(1);
+        //    ReusableMethods.waitFor(1);
             page.treatmentTextBox.click();
-            ReusableMethods.waitFor(1);
+        //    ReusableMethods.waitFor(1);
             Assert.assertTrue(page.anamnesisTextBoxDisplayed.isDisplayed());
             actions.sendKeys(Keys.PAGE_DOWN).perform();
 
@@ -118,8 +127,9 @@ public class US011_StepDef {
         @And("Dr. Treatment bolumu bos birakilamaz")
         public void drTreatmentBolumuBosBirakilamaz() {
             page.diagnosisTextBox.click();
-            ReusableMethods.waitFor(1);
+        //    ReusableMethods.waitFor(1);
             Assert.assertTrue(page.treatmentTextBoxDisplayed.isDisplayed());
+
 
         }
 
@@ -127,30 +137,33 @@ public class US011_StepDef {
         public void drDiagnosisBolumuBosBirakilamaz() {
 
             page.diagnosisTextBox.click();
-            ReusableMethods.waitFor(1);
+         //   ReusableMethods.waitFor(1);
             page.treatmentTextBox.click();
-            ReusableMethods.waitFor(1);
+         //   ReusableMethods.waitFor(1);
             Assert.assertTrue(page.diagnosisTextBoxDisplayed.isDisplayed());
 
         }
 
         @And("Dr. Anamnesis bolumune tiklar ve bilgileri girer.")
         public void drAnamnesisBolumuneTiklarVeBilgileriGirer() {
+         //   ReusableMethods.waitFor(1);
             page.anamnesisTextBox.sendKeys("herhangi bir sağlik sorunu yoktur.");
-            ReusableMethods.waitFor(1);
+
 
         }
 
         @And("Dr. Treatment bolumune tiklar ve bilgileri girer.")
         public void drTreatmentBolumuneTiklarVeBilgileriGirer() {
-            page.treatmentTextBox.sendKeys("ayakta tedavi");
             ReusableMethods.waitFor(1);
+            page.treatmentTextBox.sendKeys("ayakta tedavi");
+
 
 
         }
 
         @And("Dr. Diagnosis bolumune tiklar ve bilgileri girer.")
         public void drDiagnosisBolumuneTiklarVeBilgileriGirer() {
+         //   ReusableMethods.waitFor(1);
             actions.sendKeys(Keys.TAB).sendKeys("hastalık hastasi");
             ReusableMethods.waitFor(1);
 

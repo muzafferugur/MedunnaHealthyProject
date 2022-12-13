@@ -21,6 +21,9 @@ public class PhysicianPojo {
         this.phone = phone;
     }
 
+    public PhysicianPojo(String batch81, String s, int i, String doktor, String kaya, String s1, String s2, String male, String apositive, String s3, String s4, UserPojo user, String nuclearMedicine, Object o, Object o1, double v, String s5, Object o2) {
+    }
+
     public Integer getId() {
         return id;
     }
