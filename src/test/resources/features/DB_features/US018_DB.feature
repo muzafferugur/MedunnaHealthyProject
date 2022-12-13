@@ -7,8 +7,8 @@ Feature: DB Testing
     Then  AdminHus kayitli doktor bilgilerini getirir "<query>" ve "<columnName>"
     And   AdminHus olusturdugu doktor bilgilerini dogrular
     Examples:
-      | query                              | columnName  |
-      | select * from patient    | id                       |
+      | query                                 | columnName  |
+      | select * from patient     | id                       |
 
 
 
