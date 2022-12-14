@@ -1,18 +1,19 @@
-# # MedunnaProject  Team 11 <img align=beside width=185 src="https://github.com/SenaYcdl/SenaYcdl/blob/main/8eeb4e7f65f40cc83a72f7b66d1d9b81.gif" />
+# # Health Project  Team 11 <img align=beside width=185 src="https://github.com/SenaYcdl/SenaYcdl/blob/main/8eeb4e7f65f40cc83a72f7b66d1d9b81.gif" />
 https://medunna.com/
 sitesinin testlerini gerçekleştirdiğimiz bu projemizde Cucumber BDD framework ile çalışıldı. OOP(object oriented programming) konseptine uyarak POM(page object model) dizayn modeli kullanılmıştır
-Java programlama dili ile UI otomasyonu için Selenium WbDriver kullanılmıştır. Restful Api ile Backend Otomasyonu yapıldı.
+Java programlama dili ile UI otomasyonu için Selenium WebDriver kullanılmıştır. Restful Api ile Backend Otomasyonu yapıldı.
 
 
-• Functional test yapıldı.: Smoke test, Resression ve End To End testleri yapıldı ve bakımları sağlandı.
+• Functional test yapıldı.: Smoke test, Regression ve End To End testleri yapıldı ve bakımları sağlandı.
 
 
 ## Utilities dosyası
 
-yardımcı classımız olan Utilities dosyamızda bize sürekli lazım olan classlarımız ve methodlarımız bulunmaktadır. İçerisinde projemizi daha anlaşılır hale getirecek classlarımız ve methodlarımız vardır bunlar Driver.class , ConfigReader.class , ReusableMehod.class vb. dosyalarımız bulunmaktadır.
+yardımcı classımız olan Utilities dosyamızda bize sürekli lazım olan classlarımız ve methodlarımız bulunmaktadır. İçerisinde Driver.class , ConfigReader.class , ReusableMethod.class vb. gibi projemizi daha anlaşılır hale getirecek classlarımız ve methodlarımız bulunmaktadır.
+
 ## Configuration.properties
 
-properties dosyamızda sürekli kullandığımız variablelarımız bulunmakta , bu veriable ları kullanmak için properties dosyası Key = value olarak oluşturulmakta ,buradaki bilgileri başka classlara çağırabilmek için utilities dosyasından ConfigReader classı çağrılır. içindeki method sayesınde bu dosyada bulunan bilgileri istediğimiz yerlere çağırabiliriz.
+properties dosyamızda sürekli kullandığımız variablelarımız bulunmakta, bu variable ları kullanmak için properties dosyası Key = value olarak oluşturulmakta ,buradaki bilgileri başka classlara çağırabilmek için utilities dosyasından ConfigReader classı çağrılır. içindeki method sayesınde bu dosyada bulunan bilgileri istediğimiz yerlere çağırabiliriz.
 # pom.xml
 
 tüm çalışmalarımızın ve kodlarımızın bilgilerinin bulunduğu bu dosyada aslında kullanmak istediğimiz kodların kütüphanesini dependencies tagının içerisine yerleştirip güncel bilgilerini sürekli olarak kendimizde tutabiliriz. burası sayesinde tüm kodlara erişimi sağlayabiliriz.
