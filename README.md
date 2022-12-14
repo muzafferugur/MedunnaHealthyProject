@@ -1,7 +1,7 @@
 # # MedunnaProject  Team 11 <img align=beside width=185 src="https://github.com/SenaYcdl/SenaYcdl/blob/main/8eeb4e7f65f40cc83a72f7b66d1d9b81.gif" />
 https://medunna.com/
 sitesinin testlerini gerçekleştirdiğimiz bu projemizde Cucumber BDD framework ile çalışıldı. OOP(object oriented programming) konseptine uyarak POM(page object model) dizayn modeli kullanılmıştır
-Java programlama dili ile UI otomasyonu için Selenium WbDriver kullanılmıştır. Resful Api ile Backend Otomasyonu yapıldı.
+Java programlama dili ile UI otomasyonu için Selenium WbDriver kullanılmıştır. Restful Api ile Backend Otomasyonu yapıldı.
 
 
 • Functional test yapıldı.: Smoke test, Resression ve End To End testleri yapıldı ve bakımları sağlandı.
