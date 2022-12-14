@@ -27,7 +27,7 @@ public class US018_DB_StepDef {
     @Then("AdminHus olusturdugu doktor bilgilerini dogrular")
     public void admin_hus_olusturdugu_doktor_bilgilerini_dogrular() {
 
-        assertTrue(actualData.toString().contains("393825"));
+        assertTrue(actualData.toString().contains("374706"));
     }
 }
 

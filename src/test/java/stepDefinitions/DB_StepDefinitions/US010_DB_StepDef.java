@@ -7,6 +7,7 @@ import pojos.AppointmentPojo;
 import pojos.PatientPojo;
 import pojos.PhysicianPojo;
 import pojos.UserPojo;
+import utilities.DatabaseUtility;
 
 import java.util.Map;
 
@@ -24,7 +25,7 @@ public class US010_DB_StepDef {
     @Given("US010 Kullanici connection kurar")
     public void us010_kullanici_connection_kurar() {
 
-         createConnection();
+         DatabaseUtility.createConnection();
     }
 
     private void createConnection() {

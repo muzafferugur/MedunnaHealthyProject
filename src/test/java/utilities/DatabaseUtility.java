@@ -12,9 +12,9 @@ public class DatabaseUtility {
     private static ResultSet resultSet;
 
     public static void createConnection() {
-//        String url = ConfigurationReader.getProperty("database_url");
-//        String user = ConfigurationReader.getProperty("database_user");
-//        String password = "medunna_pass_987";
+    //   String url = ConfigurationReader.getProperty("database_url");
+    //   String user = ConfigurationReader.getProperty("database_user");
+    // String password = "medunna_pass_987";
 
 
         String url = "jdbc:postgresql://medunna.com:5432/medunna_db";
